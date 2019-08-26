@@ -5,7 +5,7 @@ const UsersService = {
 
   insertUser(knex, newUser) {
     return knex
-      .insert(newuser)
+      .insert(newUser)
       .into('blogful_users')
       .returning('*')
       .then(rows => {
